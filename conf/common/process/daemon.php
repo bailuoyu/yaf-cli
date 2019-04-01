@@ -19,10 +19,10 @@ return array(
         'controller' => 'test',
         'action' => 'three'
     ),
-//    array(
-//        'module' => 'test',
-//        'controller' => 'test',
-//        'action' => 'four'
-//    ),
+    array(
+        'module' => 'test',
+        'controller' => 'test',
+        'action' => 'four'
+    ),
 );
 
