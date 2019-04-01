@@ -5,10 +5,6 @@
  */
 class IntervalController extends CommonController {
     
-//    $this -> getRequest() -> setParam(0,'abc');
-//    $this -> getRequest() -> setParam(1,'def');
-//    $params = $this -> getRequest() -> getParams();
-    
     public function testAction(){
         
     }

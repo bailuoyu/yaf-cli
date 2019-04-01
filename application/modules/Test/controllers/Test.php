@@ -6,6 +6,11 @@
 class TestController extends CommonController {
     
     public function indexAction(){
+        $params = $this -> getRequest() -> getParams();
+        var_dump($params);
+    }
+    
+    public function mongoAction(){
         $TestDB = \Nosql\MongoCli\Test::mongo();
         //选择数据表
         $Test = $TestDB -> selectCollection('test');
