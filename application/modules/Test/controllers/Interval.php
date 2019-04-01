@@ -14,25 +14,23 @@ class IntervalController extends CommonController {
     }
 
     public function oneAction(){
-        sleep(9-2);
+        sleep(9);
         echo 'one',PHP_EOL;
     }
     
     public function twoAction(){
-        sleep(11-2);
+        sleep(11);
         echo 'two',PHP_EOL;
     }
     
     public function threeAction(){
-        sleep(7-2);
+        sleep(7);
         echo 'three',PHP_EOL;
     }
     
     public function fourAction(){
-        sleep(13-2);
+        sleep(13);
         echo 'four',PHP_EOL;
     }
-    
-    
     
 }

@@ -277,8 +277,12 @@ class FileUtil {
             $fullpath = $aimDir.$file;
             if(is_dir($fullpath)){
                 $this -> clearFileBytime($fullpath,$timeout);
+                //判断文件夹是否为空
+                if(count(scandir($fullpath))==2){
+                    echo rmdir($fullpath),'-dir-',$fullpath,PHP_EOL;
+                }
                 //试图删除空文件夹
-                rmdir($fullpath);
+                //@rmdir($fullpath);
             }else{
                 if(filemtime($fullpath)<$time){
                     $this -> unlinkFile($fullpath);
