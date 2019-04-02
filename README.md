@@ -45,7 +45,7 @@
 1. ### 运行
     1. 完全以mvc模式运行，Cli模拟Web访问，进入yaf-cli目录，运行'php yaf.php test/test/index abc 123',对应的模块是**test**，控制器是**Test**Controller，方法是**index**Action(),abc和123是参数，通过$this -> getRequest() -> getParams()获取
     2. 集成承了Cli进程守护'nohup php yaf.php process/daemon > log/daemon.log 2>&1',只有两个路由参数默认为**index**模块 &',能守护需要持续运行的脚本，配置示例在yaf-cli\conf\common\process\daemon.php
-    3. 集成了Cli定时脚本，时间精度代码中设置的是2秒，'nohup php yaf.php process/interval > log/interval.log 2>&1 &'，配置示例在yaf-cli\conf\common\process\daemon.php
+    3. 集成了Cli定时脚本，时间精度代码中设置的是2秒，'nohup php yaf.php process/interval > log/interval.log 2>&1 &'，配置示例在yaf-cli\conf\common\process\interval.php
 
 ## 三.文档
 看代码注释吧
