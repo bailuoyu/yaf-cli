@@ -36,7 +36,7 @@
 ## 二.运行环境
 1. ### 配置
     1. 集成了local，lan，dev，product四个环境，对应php.ini中的yaf.environ配置，具体请参考yaf-cli\conf\dev\application.ini
-    1. cli入口文件为yaf_oss\yaf.php，可以在入口文件做一些全局操作，比如引入composer
+    1. cli入口文件为yaf-cli\yaf.php，可以在入口文件做一些全局操作，比如引入composer
 
 1. ### 集成
     1. library中集成了mysql，redis，mongo，file，log等操作类，为本源码使用的功能插件，自行结合yaf开发，不足之处可以自行修改
