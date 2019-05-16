@@ -91,8 +91,8 @@ class File{
             $msg = $this -> objError($e);
         }
         $path = 'library/'.strstr(__CLASS__,'\\',true);
-        $name = 'error_'.date('Y-d-m');
-        $content = '<'.date('Y-d-m H:i:s').'>'.PHP_EOL;     //添加时间
+        $name = 'error_'.date('Y-m-d');
+        $content = '<'.date('Y-m-d H:i:s').'>'.PHP_EOL;     //添加时间
         $content .= '['.$this->logNum().']'.PHP_EOL;    //添加进程标识
         $content .= '('.$class.')'.PHP_EOL;    //添加类名
         $content .= $msg.PHP_EOL;   //错误详情
@@ -111,8 +111,8 @@ class File{
             $msg = $this -> objError($e);
         }
         $path = $module;
-        $name = 'error_'.date('Y-d-m');
-        $content = '<'.date('Y-d-m H:i:s').'>'.PHP_EOL;     //添加时间
+        $name = 'error_'.date('Y-m-d');
+        $content = '<'.date('Y-m-d H:i:s').'>'.PHP_EOL;     //添加时间
         $content .= '['.$this->logNum().']'.PHP_EOL;    //添加进程标识
         $content .= '('.$module.'-'.$controller.'-'.$action.')'.PHP_EOL;    //对应控制器
         $content .= $msg.PHP_EOL;   //错误详情
