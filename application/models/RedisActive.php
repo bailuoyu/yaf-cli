@@ -48,7 +48,7 @@ abstract class RedisActiveModel {
      * 真实key时会忽略$attr_key
      */
     public function setExpire($key,$attr_key=null){
-        if(substr_compare($key,$this->key_pre.':',0,strlen($this->key_pre)+1)==0){    //***如果是真实键名
+        if(strncasecmp($key,$this->key_pre.':',strlen($this->key_pre)+1)==0){    //***如果是真实键名
             $redis_key = $key;
             $str = ltrim($key,$this->key_pre.':');  //去除key_pre
             $attr_key = strstr($str,':',true);
